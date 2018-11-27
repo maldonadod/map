@@ -1,0 +1,27 @@
+{
+  "name": "map",
+  "version": "1.0.0",
+  "description": "map app",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maldonadod/map.git"
+  },
+  "keywords": [
+    "map",
+    "app",
+    "pet"
+  ],
+  "author": "emaldonadod",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maldonadod/map/issues"
+  },
+  "homepage": "https://github.com/maldonadod/map#readme",
+  "dependencies": {
+    "jest": "^23.6.0"
+  }
+}
