@@ -15,11 +15,12 @@ class Map {
         })
     }
     getElementByPosition(point) {
-        const element = this.mapping
-            .filter(obj => obj.equals(point))
-        const e = element.pop()
-        return e ? e.value() : Nothing()
-    }
+        return this.mapping.
+            filter(obj => obj.equals(point)).
+            reduce((nothing, obj) => {
+                return obj ? obj.value() : nothing
+            }, Nothing())
+        }
     render(output) {
         this.mapping.forEach(obj => {
             output.show(obj.value())
