@@ -20,7 +20,7 @@ class Map {
             reduce((nothing, obj) => {
                 return obj ? obj.value() : nothing
             }, Nothing())
-        }
+    }
     render(output) {
         this.mapping.forEach(obj => {
             output.show(obj.value())
